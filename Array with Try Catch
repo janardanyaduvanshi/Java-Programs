@@ -1,0 +1,133 @@
+//Program one
+
+class arr
+{
+	public static void main(String args[])
+	{
+		try
+		{
+		int a[]= new int[5];
+		a[0]=1;
+		a[1]=2;
+		a[2]=3;
+		a[3]=4;
+		a[4]=5;
+		System.out.println(a[5]);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			//System.out.println(e.getMessage());
+		}
+		finally
+		{
+		 System.out.println("finally executed");	
+		}
+	}
+}
+
+//program 2
+//finally always contains important type of code system.close or system.exit
+class ar
+{
+	public static void main(String args[])
+	{
+		emp e=new emp(10,"rr");
+        emp e1=new emp(11,"ss");
+		
+		
+		emp[] k=new emp[2];
+		k[0]=e;
+		k[1]=e1;
+		for(emp ss: k)
+		{
+			System.out.println(ss.id+"  "+ss.name);
+		}
+	
+		
+		try
+		{
+		//int[] b;//array declration
+		int[] a=new int[4];//instace of array
+		a[0]=1;//passing value
+		//a[1]=2;
+	    a[2]=3;
+		// a[3]=4;
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		System.out.println(a[2]);
+		System.out.println(a[3]);
+		System.out.println("length var is   "+a.length);
+        
+		System.out.println("third");
+		for(int a1:a)
+		{
+			System.out.println(a1);
+		}
+		
+		System.out.println("second");
+		for(int i=0;i<=a.length;i++)
+		{
+			System.out.println(a[i]);
+		}
+		
+		}
+		catch(ArrayIndexOutOfBoundsException a)
+		{
+			System.out.println("ArrayIndexOutOfBoundsException occur");
+		}
+	}
+}
+
+
+//Program 3
+class emp
+{
+	int id;
+	String name;
+	emp(int id, String name)
+	{
+		this.id=id;
+		this.name=name;
+		System.out.println("id   "+id+"  name   "+name);
+	}
+}
+class ar
+{
+	public static void main(String args[])
+	{
+		boolean[] b=new boolean[3];
+		for(boolean bb: b)
+		{
+			System.out.println(bb);
+		}
+		
+		String[] s=new String[3];
+		for(String ss: s)
+		{
+			System.out.println(ss);
+		}
+	}
+}
+
+//Program 4
+import java.util.*;
+
+class arr{
+public static void main(String args[])
+{
+ int i;
+ int[] a=new int[5];
+ Scanner sc=new Scanner(System.in); 
+ System.out.println("enter the values ");
+ for(i=0;i<a.length;i++)
+ {
+  a[i]=sc.nextInt();
+ }
+ System.out.println("values are");
+ for(i=0;i<a.length;i++);
+ {
+ System.out.println(a[i]);
+ }
+}
+}
