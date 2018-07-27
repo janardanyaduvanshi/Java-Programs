@@ -1,3 +1,5 @@
+// saving a java program with .java name and excute it with class name
+
 class a
 {
 	public static void main(String args[])
