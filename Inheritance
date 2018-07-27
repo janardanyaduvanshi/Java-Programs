@@ -1,1 +1,72 @@
+// program one 
 
+class a
+{
+	static void one()
+	{
+		int a=10;
+		System.out.println(a);
+	}
+}
+class b extends a
+{
+	static void one()
+	{
+		int a=30, b=40;
+		System.out.println(a+"  "+b);
+	}
+	public static void main(String args[])
+	{
+	 a A=new b();
+     A.one();
+	}
+}
+
+//program 2
+//over riding hiding child object or use static class in object
+
+public class a
+{
+	static void one()
+	{
+		int a=10;
+		System.out.println(a);
+	}
+}
+public class b extends a
+{
+    static void one()
+	{
+		int a=30, b=40;
+		System.out.println(a+"  "+b);
+	}
+	public static void main(String args[])
+	{
+	 a A=new b();
+     A.one();
+	}
+}
+
+//program 3
+abstract class ab
+{
+ static void mi();	
+}
+
+abstract class abs extends ab
+{
+ static void mi();	
+}
+
+class show extends abs
+{
+	void mi()
+	{
+		System.out.println("Mi in show");
+	}
+	public static void main(String args[])
+	{
+		abs s=new show();
+		s.mi();
+	}
+}
